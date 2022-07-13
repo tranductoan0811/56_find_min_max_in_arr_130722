@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+
+  </head>
+  <body>
+    <script src="display_arr.js"></script>
+    <script src="find_min_130722.js"></script>
+    <script src="find_max_130722.js"></script>
+
+     <script>
+      // tạo mảng số ngẫu nhiên đến 100
+      var random_arr = [];
+      for (let i = 0; i <100; i++) {
+        random_arr[i] = Math.floor(Math.random()*100);
+        
+      }
+
+      document.write("random array from 0 to 100 is: " + "<br>" + "<br>")
+      display_arr(random_arr);
+      document.write("<br>");
+
+      let max_arr_elemnt = findMax(random_arr);
+      let min_arr_elemnt = findMin(random_arr);
+      
+      document.write("**********************" + "<br>" + "The Minimum value is: " 
+                                              + min_arr_elemnt + "<br>" + "<br>");
+                                              
+      document.write("The Maximum value is: " + max_arr_elemnt + "<br>" + "<br>");
+      
+     </script> 
+
+  </body>
+
+</html>
